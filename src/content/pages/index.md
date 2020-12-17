@@ -1,11 +1,14 @@
 ---
 template: index-page
 slug: /
-title: Wyatt Morriss
-tagline: Graphic Designer
-featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
+title: Indiness
+tagline: The Indian Business Arena
+featuredImage: /assets/main-logo3.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
 ---
-He is a award winning gaming graphic designer, based in sunny side of California. Working as Principal designer at Bethesda
+
+Indiness – Your Indian Business partner will perceive your desideratum and stipulate your strategy to
+bring your business to India. With experts from the field, you can discover the best road map to capture
+Indian market.

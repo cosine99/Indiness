@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 export const blogListQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: DESC, fields: [frontmatter___title] }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
       limit: $limit
       skip: $skip
@@ -19,7 +19,7 @@ export const blogListQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            
             slug
 						title
 						featuredImage {
@@ -78,7 +78,7 @@ class BlogIndex extends React.Component {
     const nextPage = blogSlug + (currentPage + 1).toString()
 
     const posts = data.allMarkdownRemark.edges
-      .filter(edge => !!edge.node.frontmatter.date)
+      //.filter(edge => !!edge.node.frontmatter.date)
       .map(edge =>
         <PostCard key={edge.node.id} data={edge.node} />
       )
@@ -98,7 +98,7 @@ class BlogIndex extends React.Component {
           title={"Blog — Page " + currentPage + " of " + numPages}
           description={"Stackrole base blog page " + currentPage + " of " + numPages }
         />
-        <h1>Blog</h1>
+        <h1>Services</h1>
         <div className="grids col-1 sm-2 lg-3">
           {posts}
         </div>

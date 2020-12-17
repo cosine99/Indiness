@@ -17,7 +17,7 @@ export const pageQuery = graphql`
         tagline
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 480, maxHeight: 380, quality: 80, srcSetBreakpoints: [960, 1440]) {
+            fluid(maxWidth: 585, maxHeight: 412, quality: 80, srcSetBreakpoints: [960, 1440]) {
               ...GatsbyImageSharpFluid
             }
             sizes {
@@ -53,7 +53,7 @@ const HomePage = ({ data }) => {
             <Img 
               fluid={Image} 
               alt={frontmatter.title + ' - Featured image'}
-              className="featured-image"
+              className="featured-image-logo"
             />
           ) : ""}
         </div>

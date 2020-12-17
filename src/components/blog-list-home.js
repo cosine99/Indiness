@@ -6,7 +6,7 @@ import PostCard from "./post-card"
 
 const PostMaker = ({ data }) => (
   <section className="home-posts">
-    <h2>Latest in <strong>Blog</strong> <span class="icon -right"><RiArrowDownLine/></span></h2>
+    <h2>Services<span class="icon -right"><RiArrowDownLine/></span></h2>
     <div className="grids col-1 sm-2 lg-3">
       {data}
     </div>
@@ -20,7 +20,7 @@ export default function BlogListHome() {
       query={graphql`
         query {
           allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
+            sort: { order: DESC, fields: [frontmatter___title] }
             filter: { frontmatter: { template: { eq: "blog-post" } } }
             limit: 6
           ) {
@@ -29,7 +29,7 @@ export default function BlogListHome() {
                 id
                 excerpt(pruneLength: 250)
                 frontmatter {
-                  date(formatString: "MMMM DD, YYYY")
+                  
                   slug
                   title
                   featuredImage {
@@ -49,7 +49,7 @@ export default function BlogListHome() {
 
       render={ data => {
           const posts = data.allMarkdownRemark.edges
-            .filter(edge => !!edge.node.frontmatter.date)
+            //.filter(edge => !!edge.node.frontmatter.date)
             .map(edge =>
               <PostCard key={edge.node.id} data={edge.node} />
           )
