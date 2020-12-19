@@ -41,7 +41,7 @@ const Contact = ({ data }) => {
           dangerouslySetInnerHTML={{ __html: html }}
         />
 
-        <h2> Contact me here </h2>
+        {/* <h1> Contact me here </h1> */}
 
         <div>
           <AiOutlineMail
@@ -50,9 +50,9 @@ const Contact = ({ data }) => {
           />
           <a
             style={{ verticalAlign: "middle" }}
-            href="mailto:ashwini1812@gmail.com"
+            href="mailto:amarapura.ashwini@gmail.com"
           >
-            ashwini1812@gmail.com
+            amarapura.ashwini@gmail.com
           </a>
         </div>
 

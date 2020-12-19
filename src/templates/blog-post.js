@@ -49,26 +49,33 @@ const Post = ({ data, pageContext }) => {
         article={true}
       />
       <article className="blog-post">
-        <header className="featured-banner">
-          <section className="article-header">
-            <h1>{frontmatter.title}</h1>
-            <time>{frontmatter.date}</time>
-          </section>
-          {Image ? (
-            <Img 
-              fluid={Image} 
-              objectFit="cover"
-              objectPosition="50% 50%"
-              alt={frontmatter.title + ' - Featured image'}
-              className="featured-image"
-            />
-          ) : ""}
-        </header>
+        <div className="outer">
+          <div className="featured-banner">
+            <header >
+              <div className="article-header">
+                <h1>{frontmatter.title}</h1>
+                <time>{frontmatter.date}</time>
+              </div>
+              <div className="blog-post-image" >
+                {Image ? (
+                  <Img 
+                    fluid={Image} 
+                    // objectFit="cover"
+                    // objectPosition="50% 50%"
+                    alt={frontmatter.title + ' - Featured image'}
+                    className="featured-image"
+                  />
+                ) : ""}
+              </div>
+            </header>
+          </div>
         
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
+       
       </article>
       {(previous || next) && (
         <Pagination {...props} />
@@ -94,7 +101,7 @@ export const pageQuery = graphql`
         description
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 1980, maxHeight: 768, quality: 80, srcSetBreakpoints: [350, 700, 1050, 1400]) {
+            fluid(quality: 80, srcSetBreakpoints: [350, 700, 1050, 1400]) {
               ...GatsbyImageSharpFluid
               ...GatsbyImageSharpFluidLimitPresentationSize
             }

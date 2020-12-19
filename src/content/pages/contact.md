@@ -4,4 +4,5 @@ slug: /contact
 title: Get in touch
 ---
 
-Got a burning question regarding **JAMstack**, Need a new **Website**, or just anything in general. We are happy to talk.
+Indiness offers you a wide range of services to deepen your relation with India.
+We appreciate your time and effort to connect with us through the following :

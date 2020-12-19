@@ -10,7 +10,8 @@ const Footer = () => (
         <span className="icon -love">
           <RiHeart2Line />
         </span>{" "}
-        by Hrishikesh and Ankush
+        by
+        <a href="https://www.linkedin.com/in/hrishikesh-a-j-958a26150/"> Hrishikesh AJ</a>
       </p>
     </div>
   </footer>
