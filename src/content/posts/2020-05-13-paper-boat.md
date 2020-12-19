@@ -10,11 +10,11 @@ featuredImage: /assets/insight.png
 ## INDINESS INSIGHT – Indian Market Research
 
 Understand your requirement : Allow us to understand your plan and your needs to execute your
-business plan
+business plan.
 
-Decide on a research plan : Avail the expert opinion and converge on ideas for implementation
+Decide on a research plan : Avail the expert opinion and converge on ideas for implementation.
 
 Collect pertinent information : Let our team work in the backend to find the right sources, connections
 and information for you.
 
-Communication and Evaluation : discussion of our study and evaluation with your initial business plan
+Communication and Evaluation : discussion of our study and evaluation with your initial business plan.

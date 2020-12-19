@@ -10,5 +10,5 @@ cta:
 ---
 
 Indiness – Your Indian Business partner will perceive your desideratum and stipulate your strategy to
-bring your business to India. With experts from the field, you can discover the best road map to capture
+bring your business to India. With experts from the field, you can discover the best road map to capture the
 Indian market.
